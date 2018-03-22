@@ -14,7 +14,7 @@ class Foodstuff:
     eggs = 'eggs'  # 鸡蛋
 
 class Hamburger:
-
+    """汉堡对象"""
     def __init__(self, *args):
         j = "".join([i + ' ' for i in args])
         self.name = "this is a {} hamburger".format(j)
@@ -36,7 +36,7 @@ class FruitsEggs(Foodstuff):
         return Hamburger(self.fruits, self.eggs)
 
 class KFCFactory:
-
+    """汉堡工厂"""
     @staticmethod
     def buy_hamburger(hamburger_name):
         if hamburger_name == 'vegetables fruits':
